@@ -89,8 +89,59 @@ VirtualBox is a free open-source software that’s developed by Oracle Corporati
 ## After restarting, now Ubuntu Operation System is ready to use by VirtualBox.
 
 
+
+
 ## Then Install ROS on Ubuntu
+
+
+1.	Start Ubuntu from VirtualBox and set up:
+
+    a.	sources.list by the code: 
+sudo sh -c 'echo "deb http://packages.ros.org/ros/ubuntu $(lsb_release -sc) main" > /etc/apt/sources.list.d/ros-latest.list'
+
+    b.	Key:
+sudo apt-key adv --keyserver 'hkp://keyserver.ubuntu.com:80' --recv-key C1CF6E31E6BADE8868B172B4F42ED6FBAB17C654
+
+    c.	Update:
+sudo apt-get update
+
+    d.	Install full ROS Kinetic desktop
+sudo apt-get install ros-kinetic-desktop-full
 
 ![](Steps%20Pictures/Install%20ROS/1.a-d.UbuntuStart&ROS_Setup.png)
 
 
+
+    e.	Environment setup: 
+echo "source /opt/ros/kinetic/setup.bash" >> ~/.bashrc
+source ~/.bashrc
+
+    f.	Dependencies for building packages:
+sudo apt install python-rosdep python-rosinstall python-rosinstall-generator python-wstool build-essential
+
+![](Steps%20Pictures/Install%20ROS/1.e-f.UbuntuStart&ROS_Setup.png)
+
+
+
+    g.	Initialize rosdep:
+sudo apt install python-rosdep
+sudo rosdep init
+rosdep update
+
+![](Steps%20Pictures/Install%20ROS/1.g.UbuntuStart&ROS_Setup.png)
+
+
+
+2.	Check environment:
+printenv | grep ROS
+
+![](Steps%20Pictures/Install%20ROS/2.EnvironmentCheck.png)
+
+
+
+3.	Ensure that ROS is installed properly by running the ROS master code, it can be done by running “roscore”.
+
+![](Steps%20Pictures/Install%20ROS/3.EnsureInstallation.png)
+
+
+## The istallation is finished now and ROS is ready to use.
