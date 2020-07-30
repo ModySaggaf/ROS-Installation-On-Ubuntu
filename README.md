@@ -97,8 +97,7 @@ VirtualBox is a free open-source software that’s developed by Oracle Corporati
 1.	Start Ubuntu from VirtualBox and set up:
 
 
-       a.     sources.list by the code: 
-    
+       a.	sources.list by the code: 
 sudo sh -c 'echo "deb http://packages.ros.org/ros/ubuntu $(lsb_release -sc) main" > /etc/apt/sources.list.d/ros-latest.list'
 
     b.	Key:
@@ -134,7 +133,9 @@ sudo apt install python-rosdep python-rosinstall python-rosinstall-generator pyt
     g.	Initialize rosdep:
     
 sudo apt install python-rosdep
+
 sudo rosdep init
+
 rosdep update
 
 ![](Steps%20Pictures/Install%20ROS/1.g.UbuntuStart&ROS_Setup.png)
