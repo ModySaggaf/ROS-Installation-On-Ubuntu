@@ -145,3 +145,8 @@ printenv | grep ROS
 
 
 ## The istallation is finished now and ROS is ready to use.
+
+
+References:
+1. https://www.udemy.com/course/ros-basics-program-robots/
+2. http://wiki.ros.org/kinetic/Installation/Ubuntu
