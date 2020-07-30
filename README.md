@@ -1,6 +1,6 @@
 # ROS-Installation-Using-Ubuntu
 
-## First Download Virtual Box  & Ubuntu
+## Firstly Download Virtual Box  & Ubuntu
 
 
 1.	Download virtual box from: https://www.virtualbox.org/wiki/Downloads
@@ -87,3 +87,10 @@ VirtualBox is a free open-source software that’s developed by Oracle Corporati
 
 
 ## After restarting, now Ubuntu Operation System is ready to use by VirtualBox.
+
+
+## Then Install ROS on Ubuntu
+
+![](Steps%20Pictures/Install%20ROS/1.a-d.UbuntuStart&ROS_Setup.png)
+
+
