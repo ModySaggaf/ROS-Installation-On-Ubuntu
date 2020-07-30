@@ -10,7 +10,7 @@ VirtualBox is a free open-source software that’s developed by Oracle Corporati
 
 3.	Start Oracle VirtualBox and chose the name, type and version. Fill in the name and chose the Linux type with Ubuntu version.
 
-![](Steps Pictures/Download VirtualBox & Ubuntu/3.VirtualBoxStart.png)
+![](Steps%20Pictures/Download%20VirtualBox%20&%20Ubuntu/3.VirtualBoxStart.png)
 
 
 
