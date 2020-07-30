@@ -4,6 +4,7 @@
 
 
 1.	Download virtual box from: https://www.virtualbox.org/wiki/Downloads
+
 VirtualBox is a free open-source software that’s developed by Oracle Corporation. It’s a visualization tool and it’s used in this task to run another operating system inside windows.
 
 
