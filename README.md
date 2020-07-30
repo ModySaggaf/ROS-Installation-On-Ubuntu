@@ -98,8 +98,8 @@
 ## 1.	Start Ubuntu from VirtualBox and set up:
 
 
- ###         a.	sources.list by the code: 
-### sudo sh -c 'echo "deb http://packages.ros.org/ros/ubuntu $(lsb_release -sc) main" > /etc/apt/sources.list.d/ros-latest.list'
+###         a.	sources.list by the code: 
+#### sudo sh -c 'echo "deb http://packages.ros.org/ros/ubuntu $(lsb_release -sc) main" > /etc/apt/sources.list.d/ros-latest.list'
 
 ###     b.	Key:
     
@@ -107,25 +107,25 @@
 
 ###    c.	Update:
     
-##### sudo apt-get update
+#### sudo apt-get update
 
 ###    d.	Install full ROS Kinetic desktop:
     
-sudo apt-get install ros-kinetic-desktop-full
+#### sudo apt-get install ros-kinetic-desktop-full
 
 ![](Steps%20Pictures/Install%20ROS/1.a-d.UbuntuStart&ROS_Setup.png)
 
 
 
-##    e.	Environment setup: 
+###    e.	Environment setup: 
     
-echo "source /opt/ros/kinetic/setup.bash" >> ~/.bashrc
+#### echo "source /opt/ros/kinetic/setup.bash" >> ~/.bashrc
 
-source ~/.bashrc
+#### source ~/.bashrc
 
 ###    f.	Dependencies for building packages:
     
-sudo apt install python-rosdep python-rosinstall python-rosinstall-generator python-wstool build-essential
+#### sudo apt install python-rosdep python-rosinstall python-rosinstall-generator python-wstool build-essential
 
 ![](Steps%20Pictures/Install%20ROS/1.e-f.UbuntuStart&ROS_Setup.png)
 
@@ -133,17 +133,17 @@ sudo apt install python-rosdep python-rosinstall python-rosinstall-generator pyt
 
 ###    g.	Initialize rosdep:
     
-sudo apt install python-rosdep
+#### sudo apt install python-rosdep
 
-sudo rosdep init
+#### sudo rosdep init
 
-rosdep update
+#### rosdep update
 
 ![](Steps%20Pictures/Install%20ROS/1.g.UbuntuStart&ROS_Setup.png)
 
 
 
-### 2.	Check environment:
+## 2.	Check environment:
 
 #### printenv | grep ROS
 
@@ -151,7 +151,7 @@ rosdep update
 
 
 
-#### 3.	Ensure that ROS is installed properly by running the ROS master code, it can be done by running “roscore”.
+## 3.	Ensure that ROS is installed properly by running the ROS master code, it can be done by running “roscore”.
 
 ![](Steps%20Pictures/Install%20ROS/3.EnsureInstallation.png)
 
