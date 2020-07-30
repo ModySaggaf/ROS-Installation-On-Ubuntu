@@ -106,7 +106,7 @@ sudo apt-key adv --keyserver 'hkp://keyserver.ubuntu.com:80' --recv-key C1CF6E31
     c.	Update:
 sudo apt-get update
 
-    d.	Install full ROS Kinetic desktop
+    d.	Install full ROS Kinetic desktop:
 sudo apt-get install ros-kinetic-desktop-full
 
 ![](Steps%20Pictures/Install%20ROS/1.a-d.UbuntuStart&ROS_Setup.png)
