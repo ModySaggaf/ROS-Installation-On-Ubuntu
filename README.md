@@ -46,19 +46,19 @@
 
 
 
-## ## ## ## 9.	Upload the Ubuntu file to Virtual Box by going to the Virtual Box setting/storage and choose the controller optical drive to be the Ubuntu disk file that has been downloaded in step 2.
+## 9.	Upload the Ubuntu file to Virtual Box by going to the Virtual Box setting/storage and choose the controller optical drive to be the Ubuntu disk file that has been downloaded in step 2.
 
 ![](Steps%20Pictures/Download%20VirtualBox%20&%20Ubuntu/9.UploadUbuntuToVirtualBox.png)
 
 
 
-## ## ## 10.	Click “Start” to start the Ubuntu OS.
+## 10.	Click “Start” to start the Ubuntu OS.
 
 ![](Steps%20Pictures/Download%20VirtualBox%20&%20Ubuntu/10.StartUbuntu.png)
 
 
 
-## ## 11.	Choose the Ubuntu disk and start.
+## 11.	Choose the Ubuntu disk and start.
 
 ![](Steps%20Pictures/Download%20VirtualBox%20&%20Ubuntu/11.ChooseTheUbuntuDisk.png)
 
@@ -70,13 +70,13 @@
 
 
 
-## ## ## 13.	Choose to install third-party software… and continue.
+## 13.	Choose to install third-party software… and continue.
 
 ![](Steps%20Pictures/Download%20VirtualBox%20&%20Ubuntu/13.ChooseInstallThird-PartySoftware….png)
 
 
 
-## ## 14.	Choose “Erase disk and install Ubuntu”.
+## 14.	Choose “Erase disk and install Ubuntu”.
 
 ![](Steps%20Pictures/Download%20VirtualBox%20&%20Ubuntu/14.ChooseEraseDisk.png)
 
@@ -87,7 +87,7 @@
 ![](Steps%20Pictures/Download%20VirtualBox%20&%20Ubuntu/15.ChooseRegionLanguageNameAndPasswordThenRestart.png)
 
 
-# After restarting, now Ubuntu Operation System is ready to use by VirtualBox.
+## After restarting, now Ubuntu Operation System is ready to use by VirtualBox.
 
 
 
@@ -98,18 +98,18 @@
 ## 1.	Start Ubuntu from VirtualBox and set up:
 
 
-          a.	sources.list by the code: 
-sudo sh -c 'echo "deb http://packages.ros.org/ros/ubuntu $(lsb_release -sc) main" > /etc/apt/sources.list.d/ros-latest.list'
+ ###         a.	sources.list by the code: 
+### sudo sh -c 'echo "deb http://packages.ros.org/ros/ubuntu $(lsb_release -sc) main" > /etc/apt/sources.list.d/ros-latest.list'
 
-     b.	Key:
+###     b.	Key:
     
-sudo apt-key adv --keyserver 'hkp://keyserver.ubuntu.com:80' --recv-key C1CF6E31E6BADE8868B172B4F42ED6FBAB17C654
+#### sudo apt-key adv --keyserver 'hkp://keyserver.ubuntu.com:80' --recv-key C1CF6E31E6BADE8868B172B4F42ED6FBAB17C654
 
-    c.	Update:
+###    c.	Update:
     
-sudo apt-get update
+##### sudo apt-get update
 
-    d.	Install full ROS Kinetic desktop:
+###    d.	Install full ROS Kinetic desktop:
     
 sudo apt-get install ros-kinetic-desktop-full
 
@@ -117,13 +117,13 @@ sudo apt-get install ros-kinetic-desktop-full
 
 
 
-    e.	Environment setup: 
+##    e.	Environment setup: 
     
 echo "source /opt/ros/kinetic/setup.bash" >> ~/.bashrc
 
 source ~/.bashrc
 
-    f.	Dependencies for building packages:
+###    f.	Dependencies for building packages:
     
 sudo apt install python-rosdep python-rosinstall python-rosinstall-generator python-wstool build-essential
 
@@ -131,7 +131,7 @@ sudo apt install python-rosdep python-rosinstall python-rosinstall-generator pyt
 
 
 
-    g.	Initialize rosdep:
+###    g.	Initialize rosdep:
     
 sudo apt install python-rosdep
 
@@ -145,7 +145,7 @@ rosdep update
 
 ### 2.	Check environment:
 
-printenv | grep ROS
+#### printenv | grep ROS
 
 ![](Steps%20Pictures/Install%20ROS/2.EnvironmentCheck.png)
 
@@ -159,6 +159,6 @@ printenv | grep ROS
 ## The istallation is finished now and ROS is ready to use.
 
 
-References:
+# References:
 1. https://www.udemy.com/course/ros-basics-program-robots/
 2. http://wiki.ros.org/kinetic/Installation/Ubuntu
